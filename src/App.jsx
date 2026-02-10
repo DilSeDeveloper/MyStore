@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 import Navbar from './components/Navbar';
+import NotFound from "./pages/NotFound";
+
 function App(){
   return (
     <BrowserRouter>
@@ -11,6 +13,8 @@ function App(){
       <Route path='/' element={<Home/>}/>
       <Route path='/product/:id' element={<ProductDetails/>}/>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path="*" element={<NotFound />} />
+
     </Routes>
     
     </BrowserRouter>
