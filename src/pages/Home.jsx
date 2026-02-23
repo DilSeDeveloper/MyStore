@@ -26,7 +26,7 @@ function Home() {
         setError("Failed to load products");
         setLoading(false);
       });
-  }, []);
+  }, []); //Run this code only once when the component loads.
 
   if (loading) return <h3>Loading products...</h3>;
   if (error) return <h3>{error}</h3>;
